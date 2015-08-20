@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+.text-center {
+  text-align: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
