@@ -14,12 +14,13 @@
     "default_popup": "html/popup.html",
     "default_title": "click me show cookies!"
   },
-  "content_scripts": [
-     {
-       "matches": ["*://*/*"],
-       "js": ["js/jquery.js", "js/main.js"]
-     }
-   ],
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["js/jquery.js", "js/main.js"]
+  }],
+  "background": {
+    "scripts": ["js/jquery.js", "js/background.js"]
+  },
   "permissions": [
     "cookies",
     "tabs",
